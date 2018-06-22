@@ -1,0 +1,62 @@
+# all ran on the same machine, relative numbers between node version's arei
+# what matters. Seems like there was a regression in Number() performance 
+# in 10.x, which corresponds to upgrade in V8 version (6.6+)
+# https://nodejs.org/en/download/releases/
+
+v10.4.1
+Number('12') rate:       39714 Kps
+(+'12') rate:           127065 Kps
+parseFloat('12') rate:   61576 Kps
+Number('foo') rate:      18751 Kps
+(+'foo') rate:           25374 Kps
+parseFloat('foo') rate:  13060 Kps
+
+
+v10.0.0
+Number('12') rate:       44307 Kps
+(+'12') rate:           120627 Kps
+parseFloat('12') rate:   64475 Kps
+Number('foo') rate:      18083 Kps
+(+'foo') rate:           24319 Kps
+parseFloat('foo') rate:  12288 Kps
+
+v9.11.2
+Number('12') rate:      129366 Kps
+(+'12') rate:            68166 Kps
+parseFloat('12') rate:   60643 Kps
+Number('foo') rate:      24219 Kps
+(+'foo') rate:           20251 Kps
+parseFloat('foo') rate:  12533 Kps
+
+v9.10.0
+Number('12') rate:      127551 Kps
+(+'12') rate:            69109 Kps
+parseFloat('12') rate:   59737 Kps
+Number('foo') rate:      24396 Kps
+(+'foo') rate:           19448 Kps
+parseFloat('foo') rate:  12180 Kps
+
+v9.8.0
+Number('12') rate:      128041 Kps
+(+'12') rate:            66578 Kps
+parseFloat('12') rate:   58173 Kps
+Number('foo') rate:      24558 Kps
+(+'foo') rate:           19673 Kps
+parseFloat('foo') rate:  12011 Kps
+
+v9.2.1
+Number('12') rate:      132100 Kps
+(+'12') rate:            67705 Kps
+parseFloat('12') rate:   59809 Kps
+Number('foo') rate:      24172 Kps
+(+'foo') rate:           20206 Kps
+parseFloat('foo') rate:  12441 Kps
+
+v8.2.1
+Number('12') rate:       26123 Kps
+(+'12') rate:            38388 Kps
+parseFloat('12') rate:   29104 Kps
+Number('foo') rate:      14267 Kps
+(+'foo') rate:           16898 Kps
+parseFloat('foo') rate:  10185 Kps
+
