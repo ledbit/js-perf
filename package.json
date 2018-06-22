@@ -1,0 +1,19 @@
+{
+  "name": "js-perf",
+  "version": "0.0.1",
+  "description": "collection of js performance scripts",
+  "main": "index.js",
+  "scripts": {
+    "toNumber": "node src/toNumber.js foobar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ledbit/js-perf.git"
+  },
+  "author": "Ledion Bitincka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ledbit/js-perf/issues"
+  },
+  "homepage": "https://github.com/ledbit/js-perf#readme"
+}
