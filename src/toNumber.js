@@ -2,7 +2,10 @@
 // usage: node toNumber.js string
 
 
-console.log('Node version:', process.version);
+if(process) {
+  console.log('Node version:', process.version, 'V8', process.versions.v8);
+}
+
 let st = Date.now();
 const x=process.argv[2];
 
