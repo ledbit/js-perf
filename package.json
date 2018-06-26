@@ -4,7 +4,9 @@
   "description": "collection of js performance scripts",
   "main": "index.js",
   "scripts": {
-    "toNumber": "node src/toNumber.js foobar"
+    "toNumber-js": "node src/toNumber.js",
+    "build-toNumber-c": "gcc -O3 src/toNumber.c -o toNumber",
+    "toNumber-c": "./toNumber"
   },
   "repository": {
     "type": "git",

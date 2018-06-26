@@ -3,7 +3,7 @@
 
 
 if(process) {
-  console.log('Node version:', process.version, 'V8', process.versions.v8);
+  console.log(`Node version: ${process.version}, V8: ${process.versions.v8}`);
 }
 
 let st = Date.now();
@@ -29,5 +29,4 @@ for(let i=0; i<count; i++) {
    Number.isNaN(parseFloat(x))
 }
 console.log(`parseFloat('${x}') rate: `, Math.round(count/(Date.now()-st)), 'Kps')
-
 
